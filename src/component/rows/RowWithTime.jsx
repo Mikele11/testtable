@@ -29,7 +29,7 @@ const RowWithTime = props => {
         <Label/>
       </div>
     </section>
-  )
+  );
 }
 
 export { RowWithTime }

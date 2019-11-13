@@ -23,7 +23,7 @@ import { LiveLine } from '../component/liveLine/LiveLine'
 
 const rows = ['rows','rows','rows']
 
-const TableInside = props => {  
+const TableInsideLiveLine = props => {  
   return (
     <section className="tableInside" >
       <HeadTableBig/>
@@ -36,8 +36,9 @@ const TableInside = props => {
           platform="z"
         />
         })}
+      <LiveLine/>
     </section>
   )
 }
 
-export { TableInside }
+export { TableInsideLiveLine }

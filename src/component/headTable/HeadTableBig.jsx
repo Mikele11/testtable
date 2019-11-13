@@ -14,7 +14,7 @@ const HeadTableBig = () => {
     setInterval(() => {
       tick();
     }, 1000);
- });
+  });
 
   return (
     <section className="headTableBig" >

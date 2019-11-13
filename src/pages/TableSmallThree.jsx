@@ -5,16 +5,17 @@ import { RowWithTime } from '../component/rows/RowWithTime'
 
 const rows = ['rows','rows','rows']
 
-const TableSmall = props => {  
+const TableSmallThree = props => {  
   return (
     <section className="tableSmall" >
       <HeadTableSmall/>
       {rows.map((item,index) =>{
-          <RowWithTime
-          />
+        return <RowWithTime
+                  key={index}
+                />
       })}
     </section>
   )
 }
 
-export { TableSmall }
+export { TableSmallThree }

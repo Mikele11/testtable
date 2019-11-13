@@ -5,9 +5,15 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css';
 
 import App from './component/App';
+
 import { TableInside } from './pages/TableInside'
-import { TableOutside } from './pages/TableInside'
-import { TableSmall } from './pages/TableInside'
+import { TableInsideLiveLine } from './pages/TableInsideLiveLine'
+
+import { TableOutside } from './pages/TableOutside'
+import { TableOutsideLiveLine } from './pages/TableOutsideLiveLine'
+
+import { TableSmallThree } from './pages/TableSmallThree'
+import { TableSmallTwo } from './pages/TableSmallTwo'
 
 
 ReactDOM.render(
@@ -15,11 +21,11 @@ ReactDOM.render(
       <div>
         <Route exact path='/' component={App} />
         <Route path='/tableInsideNoLive' component={TableInside} />
-        <Route path='/tableInsideLive' component={Person} />
-        <Route path='/tableOutsideNoLive' component={Person} />
-        <Route path='/tableOutsideLive' component={Person} />
-        <Route path='/tableSmallTwo' component={Person} />
-        <Route path='/tableSmallThree' component={Person} />        
+        <Route path='/tableInsideLive' component={TableInsideLiveLine} />
+        <Route path='/tableOutsideNoLive' component={TableOutside} />
+        <Route path='/tableOutsideLive' component={TableOutsideLiveLine} />
+        <Route path='/tableSmallTwo' component={TableSmallTwo} />
+        <Route path='/tableSmallThree' component={TableSmallThree} />        
       </div>
   </Router>,
   document.getElementById('root')
