@@ -1,4 +1,4 @@
-.pLabel {
+.label {
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -6,4 +6,8 @@
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+
+  position: absolute;
+	left: 0;
+  bottom: 0;
 }

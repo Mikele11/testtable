@@ -25,8 +25,14 @@ const RowWithMin = props => {
       <div className="rowItem">
         {props.platforms}
       </div>
-      <Label/>
-      <Label/>
+      <Label
+        style={props.minStyle}
+        label={props.minLabel}
+      />
+      <Label
+        style={props.placeStyle}
+        label={props.placeLabel}
+      />
     </section>
   )
 }
