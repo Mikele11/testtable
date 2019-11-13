@@ -1,0 +1,36 @@
+.firstRow{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 136px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+.secondRow{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 61px;
+  line-height: 83px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: rgba(255, 255, 255, 0.72);
+}
+.threeRow {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 89px;
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
