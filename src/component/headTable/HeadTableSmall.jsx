@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import styled from 'styled-components';
+
 import './headTableSmall.css';
 import logo from '../../assets/Logo.png';
 
@@ -16,11 +18,17 @@ export const HeadTableSmall = () => {
     }, 1000);
  });
 
+const Logo = styled.div`
+  width: 394.43px;
+  height: 60px;
+  margin: 29px 1433.82px 29px 91.75px;
+`;
+
   return (
     <section className="headTableSmall" >
-      <div className="headLogoSmall">
+      <Logo>
         <img src={ logo } alt="Logo"/>
-      </div>
+      </Logo>
       <div className="headTimeSmall">
         <p>
           {time.toLocaleTimeString()}
