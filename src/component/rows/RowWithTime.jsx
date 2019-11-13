@@ -1,26 +1,26 @@
 import React from 'react'
-import train from '../../assets/Vector.png';
+import trainIcon from '../../assets/Vector.png';
 
 const RowWithTime = props => {  
   return (
     <section className="liveLine" >
       <div>
-        <img src={ train } alt="TrainLogo"/>
+        <img src={ trainIcon } alt="TrainLogo"/>
       </div>
       <div>
-        {props.trainNumber}
+        {props.connectNumber}
       </div>
       <div>
-        {props.town}
+        {props.destination}
       </div>
       <div>
-        {props.time}
+        {props.departure}
       </div>
       <div>
-        {props.toTown}
+        {props.through}
       </div>
       <div>
-        {props.platforms}
+        {props.platform}
       </div>
 
     </section>

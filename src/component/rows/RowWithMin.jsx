@@ -1,29 +1,29 @@
 import React from 'react'
 
 import './row.css';
-import train from '../../assets/Vector.png';
+import trainIcon from '../../assets/Vector.png';
 import { Label } from '../label/Label'
 
 const RowWithMin = props => {  
   return (
     <section className="row" >
       <div className="rowItem">
-        <img src={ train } alt="TrainLogo"/>
+        <img src={ trainIcon } alt="TrainLogo"/>
       </div>
       <div className="rowItem">
-        {props.trainNumber}
+        {props.connectNumber}
       </div>
       <div className="rowItem">
-        {props.town}
+        {props.destination}
       </div>
       <div className="rowItem">
-        {props.time}
+        {props.departure}
       </div>
       <div className="rowItem">
-        {props.toTown}
+        {props.through}
       </div>
       <div className="rowItem">
-        {props.platforms}
+        {props.platform}
       </div>
       <Label
         style={props.minStyle}
