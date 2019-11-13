@@ -1,0 +1,27 @@
+.headTableSmall {
+  width: 100%;
+  height: 118px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #FABB00;
+  display: inline-flex;
+}
+.headLogoSmall  {
+  width: 394.43px;
+  height: 60px;
+  margin: 29px 1433.82px 29px 91.75px;
+}
+.headTimeSmall {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 136px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1C2D4D;
+}
