@@ -29,6 +29,11 @@ const TableInside = props => {
       <HeadTableBig/>
         {rows.map((item,index) =>{
           <RowWithMin
+            connectNumber="js406"
+            destination
+            departure
+            through
+            platform
           />
         })}
       { props.liveLine ? <LiveLine/> : null}

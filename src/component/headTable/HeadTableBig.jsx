@@ -18,7 +18,7 @@ const HeadTableBig = () => {
 
   return (
     <section className="headTableBig" >
-      <div>
+      <div className="headBigFirstLine">
         <div className="headLogoBig">
           <img src={ logo } alt="Logo"/>
         </div>
