@@ -1,28 +1,33 @@
 import React from 'react'
+
 import trainIcon from '../../assets/Vector.png';
+import { Label } from '../label/Label';
 
 const RowWithTime = props => {  
   return (
-    <section className="liveLine" >
+    <section className="rowWithTime" >
+    <div>
+      <p>
+        {props.destination}
+      </p>
+      <p>
+        {props.departure}
+      </p>      
+    </div>
+    <div>
+      <p>
+        {props.through}
+      </p>
+    </div>
+    <div>
       <div>
         <img src={ trainIcon } alt="TrainLogo"/>
       </div>
-      <div>
+      <p>
         {props.connectNumber}
-      </div>
-      <div>
-        {props.destination}
-      </div>
-      <div>
-        {props.departure}
-      </div>
-      <div>
-        {props.through}
-      </div>
-      <div>
-        {props.platform}
-      </div>
-
+      </p>
+      <Label/>
+    </div>
     </section>
   )
 }
