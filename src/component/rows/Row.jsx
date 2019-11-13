@@ -1,25 +1,27 @@
 import React from 'react'
+
+import './row.css';
 import train from '../../assets/Vector.png';
 
 const Row = props => {  
   return (
-    <section className="liveLine" >
-      <div>
+    <section className="row" >
+      <div className="rowItem">
         <img src={ train } alt="TrainLogo"/>
       </div>
-      <div>
+      <div className="rowItem">
         {props.trainNumber}
       </div>
-      <div>
+      <div className="rowItem">
         {props.town}
       </div>
-      <div>
+      <div className="rowItem">
         {props.time}
       </div>
-      <div>
+      <div className="rowItem">
         {props.toTown}
       </div>
-      <div>
+      <div className="rowItem">
         {props.platforms}
       </div>
     </section>

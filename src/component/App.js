@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HeadTableBig } from './headTable/HeadTableBig'
 import { HeadTableSmall } from './headTable/HeadTableSmall'
 import { LiveLine } from '../component/liveLine/LiveLine'
-import { Label } from '../component/label/Label'
+import { Row } from '../component/rows/Row'
 
 class App extends Component {
 
@@ -10,10 +10,13 @@ class App extends Component {
     return (
       <div>
         <HeadTableSmall/>
-        <Label 
-          label="0min"
+        <Row
+          trainNumber="ft109"
+          town="Brno"
+          time="13-00"
+          toTown="Phaga"
+          platforms="3/4"
         />
-        <LiveLine text="АлисаАлисаАлисаАлисаАлисаАлисаАлисаАлиса"/>
       </div>
     );
   }
