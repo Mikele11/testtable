@@ -25,7 +25,7 @@ const rows = ['rows','rows','rows']
 
 const TableInside = props => {  
   return (
-    <section className="tableBig" >
+    <section className="tableInside" >
       <HeadTableBig/>
         {rows.map((item,index) =>{
           <RowWithMin

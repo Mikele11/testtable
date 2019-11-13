@@ -1,31 +1,22 @@
 import React from 'react'
 
-import './row.css';
-import train from '../../assets/Vector.png';
+import { HeadTableBig } from '../component/headTable/HeadTableBig'
+import { RowWithMin } from '../component/rows/RowWithMin'
+import { LiveLine } from '../component/liveLine/LiveLine'
 
-const Row = props => {  
+const rows = ['rows','rows','rows']
+
+const TableOutside = props => {  
   return (
-    <section className="row" >
-      <div className="rowItem">
-        <img src={ train } alt="TrainLogo"/>
-      </div>
-      <div className="rowItem">
-        {props.trainNumber}
-      </div>
-      <div className="rowItem">
-        {props.town}
-      </div>
-      <div className="rowItem">
-        {props.time}
-      </div>
-      <div className="rowItem">
-        {props.toTown}
-      </div>
-      <div className="rowItem">
-        {props.platforms}
-      </div>
+    <section className="tableOutside" >
+      <HeadTableBig/>
+        {rows.map((item,index) =>{
+          <RowWithMin
+          />
+        })}
+      { props.liveLine ? <LiveLine/> : null}
     </section>
   )
 }
 
-export { Row }
+export { TableOutside }

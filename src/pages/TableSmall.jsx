@@ -1,30 +1,20 @@
 import React from 'react'
 
+import { HeadTableSmall } from '../component/headTable/HeadTableSmall'
+import { RowWithTime } from '../component/rows/RowWithTime'
 
+const rows = ['rows','rows','rows']
 
-const Row = props => {  
+const TableSmall = props => {  
   return (
-    <section className="row" >
-      <div className="rowItem">
-        <img src={ train } alt="TrainLogo"/>
-      </div>
-      <div className="rowItem">
-        {props.trainNumber}
-      </div>
-      <div className="rowItem">
-        {props.town}
-      </div>
-      <div className="rowItem">
-        {props.time}
-      </div>
-      <div className="rowItem">
-        {props.toTown}
-      </div>
-      <div className="rowItem">
-        {props.platforms}
-      </div>
+    <section className="tableSmall" >
+      <HeadTableSmall/>
+      {rows.map((item,index) =>{
+          <RowWithTime
+          />
+      })}
     </section>
   )
 }
 
-export { Row }
+export { TableSmall }
